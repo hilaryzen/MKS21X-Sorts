@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Sorts {
     public static void selectionSort(int[] ary) {
         //Store the minimum value of the array and its position
@@ -20,6 +22,7 @@ public class Sorts {
                 ary[index] = ary[i];
                 ary[i] = min;
             }
+            System.out.println(Arrays.toString(ary));
         }
     }
 }
