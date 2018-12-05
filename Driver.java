@@ -13,5 +13,9 @@ public class Driver {
         int[] ary2 = {3, 12, 34, 6, 1000, -9};
         Sorts.selectionSort(ary2);
         System.out.println("Sorting [3, 12, 34, 6, 1000, -9]: " + Arrays.toString(ary2));
+
+        int[] ary3 = {7, 5, 4, 2};
+        Sorts.selectionSort(ary3);
+        System.out.println("Sorting [7, 5, 4, 2]: " + Arrays.toString(ary3));
     }
 }
