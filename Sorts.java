@@ -22,7 +22,11 @@ public class Sorts {
                 ary[index] = ary[i];
                 ary[i] = min;
             }
-            System.out.println(Arrays.toString(ary));
+            //System.out.println(Arrays.toString(ary));
         }
+    }
+
+    public static void bubbleSort(int[] data) {
+      
     }
 }
