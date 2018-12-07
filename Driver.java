@@ -17,5 +17,9 @@ public class Driver {
         int[] ary3 = {7, 5, 4, 2};
         Sorts.selectionSort(ary3);
         System.out.println("Sorting [7, 5, 4, 2]: " + Arrays.toString(ary3));
+
+        int[] ary4 = {5, 1, 12, -5, 16};
+        Sorts.bubbleSort(ary4);
+        System.out.println("Sorting [5, 1, 12, -5, 16]: ");
     }
 }
