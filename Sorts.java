@@ -27,8 +27,11 @@ public class Sorts {
     }
 
     public static void bubbleSort(int[] data) {
+        //Starts from the back of the array to make one pass for every element
         for (int i = data.length; i > 0; i--) {
+            //Checks each element to see if it needs to be switched
             for (int j = 0; j < i; j++) {
+                //If an element is larger than the one after it, switch
                 if (data[j] > data[j+1]) {
                     int smaller = data[j+1];
                     data[j+1] = data[j];
