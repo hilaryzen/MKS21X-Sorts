@@ -18,8 +18,16 @@ public class Driver {
         Sorts.selectionSort(ary3);
         System.out.println("Sorting [7, 5, 4, 2]: " + Arrays.toString(ary3));
 
+        System.out.println("Sorting [5, 1, 12, -5, 16]: ");
         int[] ary4 = {5, 1, 12, -5, 16};
         Sorts.bubbleSort(ary4);
-        System.out.println("Sorting [5, 1, 12, -5, 16]: ");
+
+        System.out.println("Sorting [2, 3, 4, 5, 1]: ");
+        int[] ary5 = {2, 3, 4, 5, 1};
+        Sorts.bubbleSort(ary5);
+
+        System.out.println("Sorting [6, 1, 2, 3, 4, 5]: ");
+        int[] ary6 = {6, 1, 2, 3, 4, 5};
+        Sorts.bubbleSort(ary6);
     }
 }
