@@ -40,6 +40,12 @@ public class Sorts {
                     swapped = true;
                 }
             }
+            //If no element has been swapped, loop is stopped early
+            if (swapped == false) {
+                i = 0;
+            } else {
+                swapped = false;
+            }
             System.out.println(Arrays.toString(data));
         }
     }
