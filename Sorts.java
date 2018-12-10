@@ -46,7 +46,7 @@ public class Sorts {
             } else {
                 swapped = false;
             }
-            System.out.println(Arrays.toString(data));
+            //System.out.println(Arrays.toString(data));
         }
     }
 }
