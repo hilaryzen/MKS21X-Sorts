@@ -73,7 +73,7 @@ public class Sorts {
                     data[0] = current;
                 }
             }
-            System.out.println(Arrays.toString(data));
+            //System.out.println(Arrays.toString(data));
         }
     }
 }
