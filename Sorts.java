@@ -78,18 +78,15 @@ public class Sorts {
             */
             int j = i;
             //Loops through sorted elements backwards until it finds an element smaller than current
-            while (j > 0) {
-              if (data[j-1] > current) {
-                data[j] = data[j-1];
-                if (j == 1) {
-                  data[0] = current;
-                }
-                j--;
-              } else {
-                data[j] = current;
-                j = 0;
-              }
+            while (j > 0 && data[j-1] > current) {
+              data[j] = data[j-1];
+              j--;
+
+
+
             }
+            data[j] = current;
+            j = 0;
             //System.out.println(Arrays.toString(data));
         }
     }
