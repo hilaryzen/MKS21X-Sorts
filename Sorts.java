@@ -52,9 +52,11 @@ public class Sorts {
 
     public static void insertionSort(int[] data) {
         int current;
-        boolean placed;
+        //boolean placed;
+        //Loops through all elements starting from the second to insert them
         for (int i = 1; i < data.length; i++) {
             current = data[i];
+            /*
             placed = false;
             for (int j = i - 1; j > 0; j--) {
                 if (data[j] < current) {
@@ -72,6 +74,21 @@ public class Sorts {
                     data[1] = data[0];
                     data[0] = current;
                 }
+            }
+            */
+            int j = i;
+            //Loops through sorted elements backwards until it finds an element smaller than current
+            while (j > 0) {
+              if (data[j-1] > current) {
+                data[j] = data[j-1];
+                if (j == 1) {
+                  data[0] = current;
+                }
+                j--;
+              } else {
+                data[j] = current;
+                j = 0;
+              }
             }
             //System.out.println(Arrays.toString(data));
         }

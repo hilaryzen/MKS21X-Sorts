@@ -42,7 +42,6 @@ public class Driver {
         System.out.println(Arrays.toString(ary8));
         */
 
-
         int[] randish = new int[Integer.parseInt(artie[0])];
         for(int i = 0 ; i < randish.length; i++){
             randish[i] =(int)(Math.random()*10000);
@@ -81,6 +80,7 @@ public class Driver {
                 System.out.println("Insertion BROKEN!!!!");
             }
         }
+        
 
     }
 }
