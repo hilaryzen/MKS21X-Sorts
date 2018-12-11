@@ -49,4 +49,18 @@ public class Sorts {
             //System.out.println(Arrays.toString(data));
         }
     }
+
+    public static void insertionSort(int[] data) {
+        for (int i = 1; i < data.length; i++) {
+            int current = data[i];
+            for (int j = i - 1; j >= 0; j--) {
+                if (data[j] < current) {
+                    data[j+1] = current;
+                    j = -1;
+                } else {
+                    data[j+1] = data[j];
+                }
+            }
+        }
+    }
 }
