@@ -51,16 +51,29 @@ public class Sorts {
     }
 
     public static void insertionSort(int[] data) {
+        int current;
+        boolean placed;
         for (int i = 1; i < data.length; i++) {
-            int current = data[i];
-            for (int j = i - 1; j >= 0; j--) {
+            current = data[i];
+            placed = false;
+            for (int j = i - 1; j > 0; j--) {
                 if (data[j] < current) {
                     data[j+1] = current;
                     j = -1;
+                    placed = true;
                 } else {
                     data[j+1] = data[j];
                 }
             }
+            if (! placed) {
+                if (data[0] <= current) {
+                    data[1] = current;
+                } else {
+                    data[1] = data[0];
+                    data[0] = current;
+                }
+            }
+            System.out.println(Arrays.toString(data));
         }
     }
 }

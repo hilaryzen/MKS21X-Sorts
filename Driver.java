@@ -32,6 +32,7 @@ public class Driver {
         Sorts.bubbleSort(ary6);
         */
 
+        /*
         int[] randish = new int[Integer.parseInt(artie[0])];
         for(int i = 0 ; i < randish.length; i++){
             randish[i] =(int)(Math.random()*10000);
@@ -60,5 +61,11 @@ public class Driver {
                 System.out.println("Bubble BROKEN!!!!");
             }
         }
+        */
+
+        System.out.println("Sorting [6, 1, 2, 3, 4, 5]: ");
+        int[] ary7 = {6, 1, 2, 3, 4, 5};
+        Sorts.insertionSort(ary7);
+        System.out.println(Arrays.toString(ary7));
     }
 }
