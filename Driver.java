@@ -42,6 +42,7 @@ public class Driver {
         System.out.println(Arrays.toString(ary8));
         */
 
+        /*
         int[] randish = new int[Integer.parseInt(artie[0])];
         for(int i = 0 ; i < randish.length; i++){
             randish[i] =(int)(Math.random()*10000);
@@ -80,7 +81,23 @@ public class Driver {
                 System.out.println("Insertion BROKEN!!!!");
             }
         }
-        
+        */
+
+        int[] ary9 = {};
+        Sorts.insertionSort(ary9);
+        System.out.println(Arrays.toString(ary9));
+
+        int[] ary10 = new int[1000000];
+        for (int i = 0; i < ary10.length; i++) {
+            ary10[i] = 0;
+        }
+        int[] ary11 = Arrays.copyOf(ary10,ary10.length);
+        Sorts.bubbleSort(ary10);
+        if( Arrays.equals(ary10,ary11)){
+            System.out.println("Bubble Correct!");
+        } else {
+            System.out.println("Bubble BROKEN!!!!");
+        }
 
     }
 }
