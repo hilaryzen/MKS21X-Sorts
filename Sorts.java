@@ -81,9 +81,6 @@ public class Sorts {
             while (j > 0 && data[j-1] > current) {
               data[j] = data[j-1];
               j--;
-
-
-
             }
             data[j] = current;
             j = 0;
